@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página - Módulo I - Primeiros Passos com HTML</title>
+</head>
+<body>
+
+    <h1 id="topo">Módulo 1 - Primeiros Passos com HTML</h1>
+    <hr />
+
+    <h2>Índice</h2>
+    <p>Navegue pelos tópicos abaixo para conferir o resumo do módulo:</p>
+    <ul>
+        <li><a href="#historia">História dos computadores</a></li>
+        <li><a href="#clients">O que são <i>Clients</i>?</a></li>
+        <li><a href="#servers">O que são <i>Servers</i>?</a></li>
+        <li><a href="#estrutura">Como é uma estrutura básica de um HTML?</a></li>
+        <li><a href="#listas">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
+        <li><a href="#referencias">Links de referências</a></li>
+    </ul>
+
+    <hr />
+
+    <!-- SEÇÃO 1 -->
+    <h2 id="historia">História dos computadores</h2>
+    <p>
+        A evolução da computação começou muito antes dos chips modernos. O <abbr title="Aparelho manual de cálculo">Ábaco</abbr> foi uma das primeiras ferramentas mecânicas. Séculos depois, surgiram robôs conceituais e máquinas a vapor como a de Charles Babbage.
+    </p>
+    <p>
+        No século XX, durante a Segunda Guerra Mundial, surgiram os computadores eletromecânicos como o <mark>ENIAC</mark>. Antigamente, os computadores pesavam toneladas; hoje, operam em microchips avançados com potências de cálculo superiores a 10<sup>9</sup> instruções por segundo (10<sup>9</sup> <small>operadores/s</small>).
+    </p>
+    <p>
+        Para saber mais sobre a evolução histórica, acesse a <a href="https://pt.wikipedia.org/wiki/Hist%C3%B3ria_da_computa%C3%A7%C3%A3o" target="_blank">História da Computação na Wikipédia</a>.
+    </p>
+    <p><a href="#topo"><u>Voltar ao índice</u></a></p>
+
+    <hr />
+
+    <!-- SEÇÃO 2 -->
+    <h2 id="clients">O que são <i>Clients</i>?</h2>
+    <p>
+        Na arquitetura da internet, um <strong><u>Client</u></strong> (ou cliente) é qualquer dispositivo ou programa que solicita serviços ou recursos a um servidor central.
+    </p>
+    <p>
+        Os navegadores web (como Chrome, Firefox e Safari) são os exemplos mais comuns de <i>clients</i>. Quando você digita um endereço de site, o cliente envia uma requisição via protocolo <abbr title="HyperText Transfer Protocol">HTTP</abbr>.
+    </p>
+    <blockquote cite="https://developer.mozilla.org">
+        "O cliente é o ponto de partida da interação do usuário na Web, responsável por renderizar a interface e capturar as ações."
+    </blockquote>
+    <p><a href="#topo"><u>Voltar ao índice</u></a></p>
+
+    <hr />
+
+    <!-- SEÇÃO 3 -->
+    <h2 id="servers">O que são <i>Servers</i>?</h2>
+    <p>
+        Um <strong><u>Server</u></strong> (servidor) é um computador de alto desempenho responsável por armazenar dados, processar requisições e entregar páginas web aos clientes.
+    </p>
+    <p>
+        Diferente dos computadores pessoais, os servidores geralmente operam 24/7 sem interrupções. <del>Antigamente eram lentos e limitados</del>, mas hoje utilizam processadores multithread e armazenamentos ultrarrápidos.
+    </p>
+    <p>
+        Também existem soluções químicas de resfriamento para data centers baseadas em compostos como H<sub>2</sub>O purificada e óleo dielétrico.
+    </p>
+    <p><a href="#topo"><u>Voltar ao índice</u></a></p>
+
+    <hr />
+
+    <!-- SEÇÃO 4 -->
+    <h2 id="estrutura">Como é uma estrutura básica de um HTML?</h2>
+    <p>
+        A linguagem HTML utiliza elementos demarcados por tags para construir a árvore <abbr title="Document Object Model">DOM</abbr> de uma página.
+    </p>
+    
+    <h3>Elementos essenciais da estrutura:</h3>
+    <ol>
+        <li><code>&lt;!DOCTYPE html&gt;</code>: Declara que o documento utiliza a versão HTML5.</li>
+        <li><code>&lt;html&gt;</code>: O elemento raiz que envolve todo o conteúdo.</li>
+        <li><code>&lt;head&gt;</code>: Contém metadados, título e links para scripts/estilos.</li>
+        <li><code>&lt;body&gt;</code>: Agrupa todo o conteúdo visível ao usuário.</li>
+    </ol>
+
+    <p>
+        Exemplo visual de marcação legada: <font color="green" face="Courier">Exemplo de texto formatado com tag font</font>.
+    </p>
+    <p><a href="#topo"><u>Voltar ao índice</u></a></p>
+
+    <hr />
+
+    <!-- SEÇÃO 5 -->
+    <h2 id="listas">Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
+    <p>
+        No HTML, existem duas formas principais de agrupar itens em lista:
+    </p>
+    
+    <h4>1. Listas Ordenadas (<code>&lt;ol&gt;</code>)</h4>
+    <p>Servem para passos sequenciais onde a ordem <strong>importa</strong>.</p>
+    <ol>
+        <li>Passo 1: Escrever a marcação HTML.</li>
+        <li>Passo 2: Salvar o arquivo com extensão .html.</li>
+        <li>Passo 3: Abrir no navegador.</li>
+    </ol>
+
+    <h4>2. Listas Não Ordenadas (<code>&lt;ul&gt;</code>)</h4>
+    <p>Usadas para conjuntos de itens onde a sequência <i>não altera o significado</i>.</p>
+    <ul>
+        <li>Linguagem HTML</li>
+        <li>Estilização CSS</li>
+        <li>Programação JavaScript</li>
+    </ul>
+
+    <h5>Níveis de títulos demonstrativos usados:</h5>
+    <h6>Este é o menor título possível (h6) para marcar notas finais.</h6>
+
+    <p><a href="#topo"><u>Voltar ao índice</u></a></p>
+
+    <hr />
+
+    <!-- SEÇÃO 6 -->
+    <h2 id="referencias">Links de referências</h2>
+    <p>Abaixo estão os links para aprofundar seus estudos em desenvolvimento web:</p>
+    <ul>
+        <li><a href="https://www.dio.me" target="_blank">DIO - Digital Innovation One</a></li>
+        <li><a href="https://www.w3.org" target="_blank">W3C - World Wide Web Consortium</a></li>
+        <li><a href="https://developer.mozilla.org/pt-BR/" target="_blank">MDN Web Docs - Documentação Oficial</a></li>
+    </ul>
+
+</body>
+</html>
